@@ -1,0 +1,5 @@
+<h2 class="page-header"><%= author.name %></h2>
+<% if (booksByAuthor.length > 0) { %>
+    <h2 class="page-header">Autorovy knihy</h2> 
+    <%- include ("../partials/bookGrid", {books: booksByAuthor}) %>
+<% } %>

@@ -1,0 +1,19 @@
+<h2 class="page-header"><%= book.title %></h2>
+<div class="book-details">
+    <div>
+        <img class="book-cover" src="<%= book.coverImagePath %>">
+        <div class="book-details-btn-grid">
+            <a class="btn btn-primary book-details-author-button" href="/authors/<%= book.author.id %>">Zobrazit autora</a>"
+        </div>
+    </div>
+    <div class="book-details-grid">
+        <div class="book-detail-label">Autor: </div>
+        <div><%= book.author.name %></div>
+        <div class="book-detail-label">Datum vydání: </div>
+        <div><%= book.publishDate.toDateString() %></div>
+        <div class="book-detail-label">Počet stran: </div>
+        <div><%= book.pageCount %></div>
+        <div class="book-detail-label">Popis knihy: </div>
+        <div><%= book.description %></div>
+    </div>
+</div>
