@@ -18,23 +18,25 @@
 </div>
 
 <div class="form-row">
-    <div class="form-item">
-      <label>Počet stran</label>
-      <input type="date" name="publishDate">
-    </div>
-    <div class="form-item">
+      
+    
+    <div class="form-row">
+      <div class="form-item form-item-no-grow">
+        <label>Obal</label>
+        <input type="file" name="cover" class="book-cover filepond">
+      </div>
+      <div class="form-item">
+        <label>Popis</label>
+        <textarea name="description"><%= book.description %></textarea>
+      </div>
+      <div class="form-item">
         <label>Datum vydání</label>
         <input type="date" name="publishDate"
               value="<%= book.publishDate == null ? '' : book.publishDate.toISOString().split('T')[0] %>">
       </div>
-</div>
-<div class="form-row">
-    <div class="form-item form-item-no-grow">
-      <label>Obal</label>
-      <input type="file" name="cover" class="book-cover filepond">
+      <div class="form-item">
+        <label>Počet stran</label>
+        <input type="number" name="pageCount" min="1" value="<%= book.pageCount %>">
+      </div>
     </div>
-    <div class="form-item">
-        <label>Popis</label>
-        <textarea name="description"><%= book.description %></textarea>
     </div>
-</div>

@@ -2,14 +2,14 @@
 
 
 :root{
---color-btn-primary-background: hsl(var(--color-base-hue), 100%, 75%);
---color-btn-primary-background-dark: hsl(var(--color-base-hue)100%, 70%);
---color-btn-primary-text: hsl(var(--color-base-hue),100%, 25%);
+--color-btn-primary-background: hsl(var(--color-base-hue), 100%, 75%  );
+--color-btn-primary-background-dark: rgba(21, 156, 21, 0.844);
+--color-btn-primary-text: hsl(var(--color-base-hue),100%, 25%); 
 --color-btn-primary-text-dark: hsl(var(--color-base-hue),100%. 15%);
 --color-btn-danger-text-dark: black;
---color-btn-danger-background: hsl(var(--color-danger-hue), 100%, 85%);
+--color-btn-danger-background: hsl(var(--color-base-hue), 100%, 75%  )  ;
 --color-btn-danger-text: black;
---color-btn-danger-background-dark: hsl(var(--color-danger-hue), 100%, 73%);
+--color-btn-danger-background-dark: rgb(143, 30, 30);
 --color-btn-border: black;
 
 
@@ -17,13 +17,14 @@
 
 .btn{
     border: 1px solid var(--color-btn-border);
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
     font-family: Poppins;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+    font-weight: bold;
 }
 
 .btn-row{

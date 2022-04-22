@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+    font-weight: bold
+}
+
 :root{
     --form-label-font-size: 1.2rem;
     --form-input-background-color: white;
     --form-input-border-color: black;
     --form-input-border-color-light: hsl(var(--color-base-hue),  100% 10%);
+    font-weight: bold;
 }
 .form-row {
     display: flex;
@@ -34,12 +39,11 @@
 .form-item input, .form-item select, .form-itemtextarea {
     height: 2rem;
     padding: 0.25rem 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     border: 1px solid var(--form-input-border-color);
     background-color: var(--form-input-background-color);
-    color: var(--color-text-light);
+    color: black;
     font-size: 1rem;
-    font-weight: normal;
     font-family: "Poppins";
     outline: none
 }

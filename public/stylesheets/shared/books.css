@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
-
+*{
+    font-weight: bold
+}
 :root {
     --book-cover-width: 200px;
     --book-cover-width-large: 325px;
@@ -35,7 +37,7 @@
 
 .book-details-label {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: bold;
     align-self: flex-start;
 }
 
